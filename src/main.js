@@ -5,4 +5,12 @@ import router from "./router";
 import store from "./store";
 import "./main.css";
 
-createApp(App).use(store).use(router).mount("#app");
+import { createMetaManager, plugin as metaPlugin } from "vue-meta";
+
+const app = createApp(App)
+  .use(router)
+  .use(store)
+  .use(createMetaManager())
+  .use(metaPlugin);
+
+app.mount("#app");

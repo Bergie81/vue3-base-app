@@ -1,18 +1,37 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="flex justify-center">
+    <div class="page-container flex flex-col items-center flex-1">
+      <img class="w-96 h-96 mt-14" alt="logo" src="@/assets/svgs/logo.svg" />
+      <h1 class="text-6xl font-extralight mt-6">{{ $store.state.app.text }}</h1>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+// import COMPONENT from "@/components/..PATH.vue";
 export default {
   name: "HomeView",
-  components: {
-    HelloWorld,
+  metaInfo: {
+    title: "Home",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "",
+      },
+    ],
   },
+  components: {
+    // COMPONENT
+  },
+  props: {},
+  data() {
+    return {};
+  },
+  computed: {},
+  mounted() {},
+  methods: {},
 };
 </script>
+
+<style scoped></style>

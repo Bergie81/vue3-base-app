@@ -27,11 +27,15 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Create basic page layout"
+##### 003 - 24.12.2021, v0.1.0
+
+
 ## "Setup basic structure"
-##### 002 - 24.12.2021, v0.1.2
+##### 002 - 24.12.2021, v0.0.2
 
 
 ## "Init"
-##### 001 - 24.12.2021, v0.1.1
+##### 001 - 24.12.2021, v0.0.1
 
 <!-- prettier-ignore-end -->
