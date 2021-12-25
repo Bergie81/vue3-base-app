@@ -9,10 +9,22 @@ const staticRoutes = [
       import(/* webpackChunkName: "home" */ "@/views/HomeView.vue"),
   },
   {
+    path: "products",
+    name: "products",
+    component: () =>
+      import(/* webpackChunkName: "products" */ "@/views/ProductsView.vue"),
+  },
+  {
     path: "about",
     name: "about",
     component: () =>
       import(/* webpackChunkName: "about" */ "@/views/AboutView.vue"),
+  },
+  {
+    path: "contact",
+    name: "contact",
+    component: () =>
+      import(/* webpackChunkName: "contact" */ "@/views/ContactView.vue"),
   },
 ];
 
@@ -20,6 +32,7 @@ const staticRoutes = [
 const routes = [
   {
     path: "/",
+    name: "base",
     component: PageLayout,
     children: [...staticRoutes],
   },

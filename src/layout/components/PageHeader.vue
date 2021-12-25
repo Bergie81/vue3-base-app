@@ -22,9 +22,11 @@
       </svg>
     </div>
   </div>
+  <vue-progress-bar :style="{ position: 'absolute', top: '52px' }" />
 </template>
 
 <script>
+import { getCurrentInstance } from "vue";
 import HeaderNav from "@/layout/components/NavHeader.vue";
 export default {
   name: "PageHeader",
@@ -32,6 +34,14 @@ export default {
     HeaderNav,
   },
   props: {},
+  setup() {
+    const internalInstance = getCurrentInstance();
+    //  [App.vue specific] When App.vue is first loaded start the progress bar
+    internalInstance.appContext.config.globalProperties.$Progress.start();
+    // setTimeout(() => {
+    internalInstance.appContext.config.globalProperties.$Progress.finish();
+    // }, 3500);
+  },
   data() {
     return {};
   },

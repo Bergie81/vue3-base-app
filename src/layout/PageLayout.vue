@@ -3,6 +3,7 @@
     <header class="flex flex-col justify-center">
       <AppHeader />
     </header>
+
     <main class="flex flex-col justify-center flex-1 bg-white mb-14">
       <AppMain />
     </main>

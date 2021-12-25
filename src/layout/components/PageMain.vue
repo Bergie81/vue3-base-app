@@ -1,9 +1,13 @@
 <template>
+  <!-- Content of children components added -->
   <router-view :key="key" v-slot="{ Component }">
     <transition name="fade" mode="out-in">
       <component :is="Component" />
     </transition>
   </router-view>
+  <!-- <transition name="fade" mode="out-in">
+    <router-view :key="key" />
+  </transition> -->
 </template>
 
 <script>
@@ -19,6 +23,7 @@ export default {
   },
   computed: {
     key() {
+      // console.log("$route:", this.$route);
       return this.$route.fullPath;
     },
   },
@@ -27,7 +32,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 .fade-enter,
 .fade-leave-active {
   opacity: 0;

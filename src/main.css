@@ -2,8 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* SELECTION */
+  ::-moz-selection {
+    background: #049835;
+    color: white;
+    fill: white;
+  }
+  ::selection {
+    background: #049835;
+    color: white;
+    fill: white;
+  }
+
+  /* SCROLLBAR */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #edf2f7;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: lightgrey;
+    border-radius: 100vh;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: grey;
+  }
+}
+
 @layer components {
+  body {
+  width: 100vw;
+  overflow-x:hidden;
+}
   .page-container {
     @apply px-6 xl:max-w-7xl;
   }
+}
+
+/* .router-link-active {
+  color: red;
+} */
+
+.router-link-exact-active {
+  color: #049835;
+  background-color: white;
+  //padding: 0.5rem 1rem;
+  border-radius: 5px;
 }

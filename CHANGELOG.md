@@ -1,4 +1,3 @@
-<!-- prettier-ignore-start -->
 # Change Log (Commits)
 
 <!--
@@ -27,6 +26,10 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Installing and testing standard dependencies"
+##### 004 - 25.12.2021, v0.1.1
+
+
 ## "Create basic page layout"
 ##### 003 - 24.12.2021, v0.1.0
 
@@ -37,5 +40,3 @@ Patch:
 
 ## "Init"
 ##### 001 - 24.12.2021, v0.0.1
-
-<!-- prettier-ignore-end -->

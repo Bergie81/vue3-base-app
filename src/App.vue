@@ -1,9 +1,10 @@
 <template>
   <metainfo>
     <template #title="{ content }">{{
-      content ? `${content} | Basic Layout` : `Basic Layout`
+      content ? `${content} | Basic Web App` : `Basic Web App`
     }}</template>
   </metainfo>
+  <!-- Content of "PageLayout" added -->
   <router-view />
 </template>
 
