@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col h-screen">
+  <div class="font-roboto flex flex-col h-screen">
     <header class="flex flex-col justify-center">
       <AppHeader />
     </header>
 
-    <main class="flex flex-col justify-center flex-1 bg-white mb-14">
+    <main class="font flex flex-col justify-center flex-1 bg-white mb-14">
       <AppMain />
     </main>
     <footer class="flex flex-col justify-center">

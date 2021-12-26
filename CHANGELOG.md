@@ -26,6 +26,10 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Add custom fonts"
+##### 005 - 26.12.2021, v0.1.2
+
+
 ## "Installing and testing standard dependencies"
 ##### 004 - 25.12.2021, v0.1.1
 
