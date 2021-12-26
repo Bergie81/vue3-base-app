@@ -9,10 +9,10 @@ const staticRoutes = [
       import(/* webpackChunkName: "home" */ "@/views/HomeView.vue"),
   },
   {
-    path: "products",
-    name: "products",
+    path: "components",
+    name: "components",
     component: () =>
-      import(/* webpackChunkName: "products" */ "@/views/ProductsView.vue"),
+      import(/* webpackChunkName: "components" */ "@/views/ComponentsView.vue"),
   },
   {
     path: "about",

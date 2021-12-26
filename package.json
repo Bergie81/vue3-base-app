@@ -1,6 +1,6 @@
 {
   "name": "vue3-base-app",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Thomas Bergmann <bergie81@gmail.com>",
   "private": true,
   "scripts": {

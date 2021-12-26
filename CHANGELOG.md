@@ -26,6 +26,10 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Add custom color theme"
+##### 006 - 26.12.2021, v0.1.3
+
+
 ## "Add custom fonts"
 ##### 005 - 26.12.2021, v0.1.2
 

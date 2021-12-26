@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center items-center">
-    <h1 class="text-2xl">Contact</h1>
+    <h1 class="text-4xl">Contact Page</h1>
   </div>
 </template>
 

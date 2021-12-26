@@ -12,7 +12,7 @@ import VueScrollTo from "vue-scrollto";
 import VueLazyLoad from "vue3-lazyload";
 
 const optionsProgressBar = {
-  color: "#049835",
+  color: "#304269",
   failedColor: "#874b4b",
   thickness: "4px",
   transition: {
@@ -21,7 +21,7 @@ const optionsProgressBar = {
     termination: 300,
   },
   autoRevert: true,
-  location: "top",
+  location: "bottom",
   inverse: false,
 };
 
@@ -31,7 +31,7 @@ const optionsScroll = {
   easing: [1, 0, 0.67, 1],
   //easing: [0.5, 0.0, 0.0, 1.25],
   // easing: "ease-in-out",
-  offset: -30,
+  offset: -80,
   force: true,
   cancelable: true,
   onStart: false,

@@ -1,7 +1,9 @@
 <template>
   <div class="flex justify-center">
     <div class="page-container">
-      <h1 id="products" class="flex justify-center text-2xl mt-12">Products</h1>
+      <h1 id="components" class="flex justify-center text-4xl mt-12">
+        Components
+      </h1>
       <div class="flex flex-col justify-center items-center mt-8 pb-96x mb-96x">
         <h2 class="text-xl font-bold underline">Lightbox</h2>
         <LightBox />
@@ -19,8 +21,8 @@
       <div class="flex flex-col justify-center items-center mt-8">
         <h2 class="text-xl font-bold underline mb-2">Smooth Scroll</h2>
         <button
-          class="px-6 py-4 bg-pink-500 text-white rounded hover:bg-pink-800"
-          v-scroll-to="'#products'"
+          class="px-6 py-4 bg-accent text-white rounded hover:bg-red-600"
+          v-scroll-to="'#components'"
         >
           Scroll up
         </button>
@@ -32,7 +34,7 @@
 <script>
 import LightBox from "@/components/ui/LightBox.vue";
 export default {
-  name: "ProductsView",
+  name: "ComponentsView",
   components: { LightBox },
 };
 </script>

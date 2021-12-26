@@ -1,9 +1,15 @@
 <template>
-  <div class="flex justify-center bg-zinc-400">
-    <div class="page-container flex justify-between items-center flex-1 h-14">
+  <div
+    class="w-screen h-14 lg:h-20 flex justify-center bg-tone fixed top-0 left-0"
+  >
+    <div class="page-container w-screen flex justify-between items-center">
       <div class="flex items-center">
-        <img src="@/assets/svgs/logo.svg" alt="Logo" class="w-8 h-8" />
-        <p class="font-bold text-white ml-2">100 Cups of Coffee</p>
+        <img
+          src="@/assets/svgs/logo.svg"
+          alt="Logo"
+          class="w-8 h-8 lg:w-12 lg:h-12"
+        />
+        <p class="text-lg font-serif text-white ml-2">100 Cups of Coffee</p>
       </div>
       <HeaderNav class="hidden lg:block" />
       <svg
@@ -21,8 +27,8 @@
         />
       </svg>
     </div>
+    <vue-progress-bar :style="{ position: 'absolute', bottom: '0' }" />
   </div>
-  <vue-progress-bar :style="{ position: 'absolute', top: '52px' }" />
 </template>
 
 <script>
@@ -46,7 +52,9 @@ export default {
     return {};
   },
   computed: {},
-  mounted() {},
+  mounted() {
+    this.value = window.innerWidth;
+  },
   methods: {},
 };
 </script>

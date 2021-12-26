@@ -22,12 +22,6 @@
   }
   @font-face {
     font-family: "Roboto";
-    font-weight: 400;
-    font-style: "italic";
-    src: url("/src/assets/fonts/Roboto-Italic.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Roboto";
     font-weight: 700;
     src: url("/src/assets/fonts/Roboto-Bold.ttf") format("truetype");
   }
@@ -48,12 +42,12 @@
   
   /* SELECTION */
   ::-moz-selection {
-    background: #049835;
+    background: #91BED4;
     color: white;
     fill: white;
   }
   ::selection {
-    background: #049835;
+    background: #91BED4;
     color: white;
     fill: white;
   }
@@ -87,11 +81,27 @@
 }
 
 /* .router-link-active {
-  color: red;
+  color: ;
 } */
 
 .router-link-exact-active {
-  color: #049835;
+  color: #91BED4;
   background-color: white;
-  border-radius: 5px;
+}
+
+.progressbar {
+  position:absolute;
+  top: 56px;
+  @media (min-width: 1024px) {
+  top: 76px;
+  }
+}
+
+
+
+.test {
+  color: #272942;
+  color: #565773;
+  color: #CCD0DE;
+  color: #FF2612;
 }
