@@ -53,7 +53,7 @@
   }
 
   /* SCROLLBAR */
-  /* width */
+  /* Width */
   ::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -89,19 +89,11 @@
   background-color: white;
 }
 
-.progressbar {
-  position:absolute;
-  top: 56px;
-  @media (min-width: 1024px) {
-  top: 76px;
-  }
-}
 
 
-
-.test {
+/* .test {
   color: #272942;
   color: #565773;
   color: #CCD0DE;
   color: #FF2612;
-}
+} */

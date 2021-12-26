@@ -19,7 +19,7 @@ export default {
       {
         vmid: "description",
         name: "description",
-        content: "",
+        content: "This is the homepage.",
       },
     ],
   },
@@ -36,8 +36,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.test {
-  color: "#565773";
-}
-</style>
+<style scoped></style>

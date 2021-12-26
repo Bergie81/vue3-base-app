@@ -35,6 +35,16 @@
 import LightBox from "@/components/ui/LightBox.vue";
 export default {
   name: "ComponentsView",
+  metaInfo: {
+    title: "Components",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "Preview of all available components.",
+      },
+    ],
+  },
   components: { LightBox },
 };
 </script>

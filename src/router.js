@@ -1,40 +1,29 @@
 import { createRouter, createWebHistory } from "vue-router";
-import PageLayout from "./layout/PageLayout.vue";
 
-const staticRoutes = [
+const routes = [
   {
-    path: "",
+    path: "/",
     name: "home",
     component: () =>
       import(/* webpackChunkName: "home" */ "@/views/HomeView.vue"),
   },
   {
-    path: "components",
+    path: "/components",
     name: "components",
     component: () =>
       import(/* webpackChunkName: "components" */ "@/views/ComponentsView.vue"),
   },
   {
-    path: "about",
+    path: "/about",
     name: "about",
     component: () =>
       import(/* webpackChunkName: "about" */ "@/views/AboutView.vue"),
   },
   {
-    path: "contact",
+    path: "/contact",
     name: "contact",
     component: () =>
       import(/* webpackChunkName: "contact" */ "@/views/ContactView.vue"),
-  },
-];
-
-// All routes
-const routes = [
-  {
-    path: "/",
-    name: "base",
-    component: PageLayout,
-    children: [...staticRoutes],
   },
 ];
 

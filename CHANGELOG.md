@@ -26,6 +26,10 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Restructure app layout"
+##### 007 - 26.12.2021, v0.1.4
+
+
 ## "Add custom color theme"
 ##### 006 - 26.12.2021, v0.1.3
 

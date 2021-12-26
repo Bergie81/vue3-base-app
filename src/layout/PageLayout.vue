@@ -6,7 +6,7 @@
     <main
       class="font flex flex-col justify-center flex-1 bg-white mb-14 mt-14 lg:mt-20"
     >
-      <AppMain />
+      <slot />
     </main>
     <footer class="flex flex-col justify-center">
       <AppFooter />
@@ -16,16 +16,12 @@
 
 <script>
 import AppHeader from "@/layout/components/PageHeader.vue";
-import AppMain from "@/layout/components/PageMain.vue";
 import AppFooter from "@/layout/components/PageFooter.vue";
 export default {
   name: "PageLayout",
   components: {
     AppHeader,
-    AppMain,
     AppFooter,
   },
 };
 </script>
-
-<style scoped></style>

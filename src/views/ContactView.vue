@@ -7,6 +7,16 @@
 <script>
 export default {
   name: "ContactView",
+  metaInfo: {
+    title: "Contact",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "The Contact page.",
+      },
+    ],
+  },
 };
 </script>
 
