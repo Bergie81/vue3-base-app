@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-screen h-14 lg:h-20 flex justify-center bg-tone fixed top-0 left-0"
+    class="w-screen h-14 lg:h-20 flex justify-center bg-tone fixed top-0 left-0 z-50"
   >
     <div class="page-container w-screen flex justify-between items-center">
       <div class="flex items-center">

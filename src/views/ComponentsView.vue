@@ -5,6 +5,11 @@
         Components
       </h1>
       <div class="flex flex-col justify-center items-center mt-8 pb-96x mb-96x">
+        <h2 class="text-xl font-bold underline">Switch</h2>
+        <Switch v-model:isChecked="isChecked" class="shadow p-8 rounded-lg" />
+        <div>{{ isChecked }}</div>
+      </div>
+      <div class="flex flex-col justify-center items-center mt-8 pb-96x mb-96x">
         <h2 class="text-xl font-bold underline">Lightbox</h2>
         <LightBox />
       </div>
@@ -32,6 +37,7 @@
 </template>
 
 <script>
+import Switch from "@/components/ui/Switch.vue";
 import LightBox from "@/components/ui/LightBox.vue";
 export default {
   name: "ComponentsView",
@@ -45,6 +51,11 @@ export default {
       },
     ],
   },
-  components: { LightBox },
+  components: { Switch, LightBox },
+  data() {
+    return {
+      isChecked: true,
+    };
+  },
 };
 </script>

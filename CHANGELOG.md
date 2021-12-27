@@ -26,6 +26,10 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Add tailwind switch/toggle component"
+##### 008 - 27.12.2021, v0.1.5
+
+
 ## "Restructure app layout"
 ##### 007 - 26.12.2021, v0.1.4
 
