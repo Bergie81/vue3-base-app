@@ -25,11 +25,36 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "contact" */ "@/views/ContactView.vue"),
   },
+  {
+    path: "/:notFound(.*)",
+    name: "notfound",
+    component: () =>
+      import(/* webpackChunkName: "notfound" */ "@/views/NotFound.vue"),
+  },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    let position = { x: 0, y: 0 };
+    // Keep scroll position when using browser buttons
+    if (savedPosition) {
+      position = savedPosition;
+    }
+
+    // Workaround for transitions scrolling to the top of the page
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(position);
+      }, 500);
+    });
+  },
 });
+
+// Prevents jumping to top when routing
+if ("scrollRestoration" in window.history) {
+  window.history.scrollRestoration = "manual";
+}
 
 export default router;
