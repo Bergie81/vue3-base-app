@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import store from "@/store/index";
 
 const routes = [
   {
@@ -50,6 +51,12 @@ const router = createRouter({
       }, 500);
     });
   },
+});
+
+// NAVIGATION GUARDS
+router.beforeEach((to, from, next) => {
+  store.dispatch("openMobileMenu", false);
+  next();
 });
 
 // Prevents jumping to top when routing

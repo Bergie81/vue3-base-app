@@ -26,6 +26,10 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Add basic mobile nav"
+##### 010 - 30.12.2021, v0.1.7
+
+
 ## "Add 404 Page, improve scroll behavior"
 ##### 009 - 27.12.2021, v0.1.6
 

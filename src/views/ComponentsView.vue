@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import Switch from "@/components/ui/Switch.vue";
+import Switch from "@/components/base/Switch.vue";
 import LightBox from "@/components/ui/LightBox.vue";
 export default {
   name: "ComponentsView",

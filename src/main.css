@@ -76,7 +76,7 @@
 
 @layer components {
   .page-container {
-    @apply px-6 xl:max-w-7xl;
+    @apply px-4 xl:max-w-7xl;
   }
 }
 
