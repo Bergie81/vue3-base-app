@@ -26,6 +26,10 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Add directives, add manifest.json, add global variables, test Netlify build, test Open Graph"
+##### 011 - 01.01.2022, v0.1.8
+
+
 ## "Add basic mobile nav"
 ##### 010 - 30.12.2021, v0.1.7
 

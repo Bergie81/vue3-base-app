@@ -6,16 +6,10 @@
 
 <script>
 export default {
-  name: "ContactView",
+  name: "404Page",
   metaInfo: {
     title: "Contact",
-    meta: [
-      {
-        vmid: "description",
-        name: "description",
-        content: "The Contact page.",
-      },
-    ],
+    description: "The 404 page.",
   },
 };
 </script>

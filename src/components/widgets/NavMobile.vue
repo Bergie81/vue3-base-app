@@ -22,12 +22,10 @@
       ></div>
       <!-- MOBILE MENU CONTENT -->
       <div
+        v-if="$store.state.app.isOpenMobileNav"
         class="flex flex-col items-center justify-center w-full h-full pl-7 z-20"
       >
-        <nav
-          v-if="$store.state.app.isOpenMobileNav"
-          class="w-full h-full text-3xl text-white"
-        >
+        <nav class="w-full h-full text-3xl text-white">
           <ul class="flex flex-col items-center justify-center w-full h-full">
             <li>
               <router-link :to="{ name: 'home' }" class="px-6 py-3 rounded"
@@ -164,77 +162,77 @@ li {
   }
 }
 
-.menu {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin: 25px;
-}
-.menu span {
-  margin: 0 auto;
-  position: relative;
-  top: 12px;
-}
-.menu span:before,
-.menu span:after {
-  position: absolute;
-  content: "";
-}
-.menu span,
-.menu span:before,
-.menu span:after {
-  width: 30px;
-  height: 6px;
-  background-color: #000;
-  display: block;
-}
-.menu span:before {
-  margin-top: -12px;
-}
-.menu span:after {
-  margin-top: 12px;
-}
+// .menu {
+//   position: relative;
+//   display: inline-block;
+//   width: 30px;
+//   height: 30px;
+//   margin: 25px;
+// }
+// .menu span {
+//   margin: 0 auto;
+//   position: relative;
+//   top: 12px;
+// }
+// .menu span:before,
+// .menu span:after {
+//   position: absolute;
+//   content: "";
+// }
+// .menu span,
+// .menu span:before,
+// .menu span:after {
+//   width: 30px;
+//   height: 6px;
+//   background-color: #000;
+//   display: block;
+// }
+// .menu span:before {
+//   margin-top: -12px;
+// }
+// .menu span:after {
+//   margin-top: 12px;
+// }
 
-.menu-open span {
-  -webkit-transition-duration: 0s;
-  transition-duration: 0s;
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-.menu-open:hover span {
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-.menu-open span:before {
-  -webkit-transition-property: margin, -webkit-transform;
-  transition-property: margin, transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s;
-}
-.menu-open:hover span:before {
-  margin-top: 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition-delay: 0s, 0.2s;
-  transition-delay: 0s, 0.2s;
-}
-.menu-open span:after {
-  -webkit-transition-property: margin, -webkit-transform;
-  transition-property: margin, transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-delay: 0.2s, 0s;
-  transition-delay: 0.2s, 0s;
-}
-.menu-open:hover span:after {
-  margin-top: 0;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transition-delay: 0s, 0.2s;
-  transition-delay: 0s, 0.2s;
-}
+// .menu-open span {
+//   -webkit-transition-duration: 0s;
+//   transition-duration: 0s;
+//   -webkit-transition-delay: 0.2s;
+//   transition-delay: 0.2s;
+// }
+// .menu-open:hover span {
+//   background-color: rgba(0, 0, 0, 0);
+//   -webkit-transition-delay: 0.2s;
+//   transition-delay: 0.2s;
+// }
+// .menu-open span:before {
+//   -webkit-transition-property: margin, -webkit-transform;
+//   transition-property: margin, transform;
+//   -webkit-transition-duration: 0.2s;
+//   transition-duration: 0.2s;
+//   -webkit-transition-delay: 0.2s, 0s;
+//   transition-delay: 0.2s, 0s;
+// }
+// .menu-open:hover span:before {
+//   margin-top: 0;
+//   -webkit-transform: rotate(45deg);
+//   transform: rotate(45deg);
+//   -webkit-transition-delay: 0s, 0.2s;
+//   transition-delay: 0s, 0.2s;
+// }
+// .menu-open span:after {
+//   -webkit-transition-property: margin, -webkit-transform;
+//   transition-property: margin, transform;
+//   -webkit-transition-duration: 0.2s;
+//   transition-duration: 0.2s;
+//   -webkit-transition-delay: 0.2s, 0s;
+//   transition-delay: 0.2s, 0s;
+// }
+// .menu-open:hover span:after {
+//   margin-top: 0;
+//   -webkit-transform: rotate(-45deg);
+//   transform: rotate(-45deg);
+//   -webkit-transition-delay: 0s, 0.2s;
+//   transition-delay: 0s, 0.2s;
+// }
 </style>

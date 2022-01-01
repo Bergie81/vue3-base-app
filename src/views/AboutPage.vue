@@ -6,16 +6,10 @@
 
 <script>
 export default {
-  name: "AboutView",
+  name: "AboutPage",
   metaInfo: {
     title: "About Us",
-    meta: [
-      {
-        vmid: "description",
-        name: "description",
-        content: "The About Us page.",
-      },
-    ],
+    description: "The About Us page.",
   },
 };
 </script>

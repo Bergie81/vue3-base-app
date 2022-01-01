@@ -6,31 +6,31 @@ const routes = [
     path: "/",
     name: "home",
     component: () =>
-      import(/* webpackChunkName: "home" */ "@/views/HomeView.vue"),
+      import(/* webpackChunkName: "home" */ "@/views/HomePage.vue"),
   },
   {
     path: "/components",
     name: "components",
     component: () =>
-      import(/* webpackChunkName: "components" */ "@/views/ComponentsView.vue"),
+      import(/* webpackChunkName: "components" */ "@/views/ComponentsPage.vue"),
   },
   {
     path: "/about",
     name: "about",
     component: () =>
-      import(/* webpackChunkName: "about" */ "@/views/AboutView.vue"),
+      import(/* webpackChunkName: "about" */ "@/views/AboutPage.vue"),
   },
   {
     path: "/contact",
     name: "contact",
     component: () =>
-      import(/* webpackChunkName: "contact" */ "@/views/ContactView.vue"),
+      import(/* webpackChunkName: "contact" */ "@/views/ContactPage.vue"),
   },
   {
     path: "/:notFound(.*)",
     name: "notfound",
     component: () =>
-      import(/* webpackChunkName: "notfound" */ "@/views/NotFound.vue"),
+      import(/* webpackChunkName: "notfound" */ "@/views/404Page.vue"),
   },
 ];
 

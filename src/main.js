@@ -68,3 +68,23 @@ const app = createApp(App)
   .use(VueLazyLoad, optionsLazyLoading);
 
 app.mount("#app");
+
+// CUSTOM DIRECTIVES
+// Animate element when in viewport
+import Appear from "@/directives/appear";
+app.directive("appear", Appear);
+
+// GLOBAL VARIABLES
+app.config.globalProperties.$baseURL = process.env.BASE_URL;
+// app.config.globalProperties.$http = Axios;
+
+// Meta, OpenGraph
+app.config.globalProperties.$name = "Awesome Vue 3 App";
+if (process.env.NODE_ENV === "production") {
+  app.config.globalProperties.$domain = "https://slpa-app.netlify.app";
+  // app.config.globalProperties.$http.defaults.baseURL = "https://bcd-api-server.herokuapp.com";
+} else {
+  // Development Mode
+  app.config.globalProperties.$domain = "http://localhost:8080";
+  // app.config.globalProperties.$http.defaults.baseURL = "http://localhost:3000";
+}

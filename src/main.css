@@ -9,33 +9,39 @@
     font-family: "Roboto";
     font-weight: 100;
     src: url("/src/assets/fonts/Roboto-Thin.ttf") format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "Roboto";
     font-weight: 300;
     src: url("/src/assets/fonts/Roboto-Light.ttf") format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "Roboto";
     font-weight: 400;
     src: url("/src/assets/fonts/Roboto-Regular.ttf") format("truetype");
+    font-display: swap;
   }
   @font-face {
     font-family: "Roboto";
     font-weight: 700;
     src: url("/src/assets/fonts/Roboto-Bold.ttf") format("truetype");
+    font-display: swap;
   }
   @font-face {
     /* Also: "extrabold" */
     font-family: "Roboto";
     font-weight: 900;
     src: url("/src/assets/fonts/Roboto-Black.ttf") format("truetype");
+    font-display: swap;
   }
   /* SERIF FONT */
   @font-face {
     font-family: "Lora";
     font-weight: 700;
     src: url("/src/assets/fonts/Lora-Bold.ttf") format("truetype");
+    font-display: swap;
   }
   /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,400&display=swap'); */
 
@@ -76,7 +82,7 @@
 
 @layer components {
   .page-container {
-    @apply px-4 xl:max-w-7xl;
+    @apply px-4 lg:px-6 xl:max-w-7xl;
   }
 }
 
