@@ -26,6 +26,10 @@ Patch:
 <!-- "In this commit I ..." -->
 
 
+## "Fail to implement prerendering"
+##### 012 - 02.01.2022, v0.1.9
+
+
 ## "Add directives, add manifest.json, add global variables, test Netlify build, test Open Graph"
 ##### 011 - 01.01.2022, v0.1.8
 

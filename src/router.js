@@ -1,37 +1,48 @@
 import { createRouter, createWebHistory } from "vue-router";
 import store from "@/store/index";
 
+//TODO: Dynamic import. Static import due to testing prerender.
+import Home from "@/views/HomePage.vue";
+import About from "@/views/AboutPage.vue";
+import Components from "@/views/ComponentsPage.vue";
+import Contact from "@/views/ContactPage.vue";
+
 const routes = [
   {
     path: "/",
     name: "home",
-    component: () =>
-      import(/* webpackChunkName: "home" */ "@/views/HomePage.vue"),
+    component: Home,
+    // component: () =>
+    //   import(/* webpackChunkName: "home" */ "@/views/HomePage.vue"),
   },
   {
     path: "/components",
     name: "components",
-    component: () =>
-      import(/* webpackChunkName: "components" */ "@/views/ComponentsPage.vue"),
+    component: Components,
+    // component: () =>
+    //   import(/* webpackChunkName: "components" */ "@/views/ComponentsPage.vue"),
   },
   {
     path: "/about",
     name: "about",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "@/views/AboutPage.vue"),
+    component: About,
+    // component: () =>
+    //   import(/* webpackChunkName: "about" */ "@/views/AboutPage.vue"),
   },
   {
     path: "/contact",
     name: "contact",
-    component: () =>
-      import(/* webpackChunkName: "contact" */ "@/views/ContactPage.vue"),
+    component: Contact,
+    // component: () =>
+    //   import(/* webpackChunkName: "contact" */ "@/views/ContactPage.vue"),
   },
-  {
-    path: "/:notFound(.*)",
-    name: "notfound",
-    component: () =>
-      import(/* webpackChunkName: "notfound" */ "@/views/404Page.vue"),
-  },
+  // {
+  //   path: "/:notFound(.*)",
+  //   name: "notfound",
+  //   // component: NotFound
+  //   component: () =>
+  //     import(/* webpackChunkName: "notfound" */ "@/views/404Page.vue"),
+  // },
 ];
 
 const router = createRouter({

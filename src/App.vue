@@ -26,6 +26,10 @@ export default {
       htmlAttrs: { lang: "en", amp: true },
     });
   },
+  mounted() {
+    // You'll need this for renderAfterDocumentEvent (Testing prerendering).
+    // document.dispatchEvent(new Event("render-event"));
+  },
 };
 </script>
 <style lang="scss">

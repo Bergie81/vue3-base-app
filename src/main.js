@@ -7,7 +7,7 @@ import "./main.css";
 
 import VueProgressBar from "@aacassandra/vue3-progressbar";
 import { createMetaManager, plugin as metaPlugin } from "vue-meta";
-// import VueSmoothScroll from "vue3-smooth-scroll";
+
 import VueScrollTo from "vue-scrollto";
 import VueLazyLoad from "vue3-lazyload";
 
@@ -66,7 +66,6 @@ const app = createApp(App)
   .use(metaPlugin)
   .use(VueScrollTo, optionsScroll)
   .use(VueLazyLoad, optionsLazyLoading);
-
 app.mount("#app");
 
 // CUSTOM DIRECTIVES

@@ -1,7 +1,7 @@
 {
   "name": "Vue 3 Web App",
   "short_name": "Vue3 App",
-  "start_url": ".",
+  "start_url": "/",
   "theme_color": "#91BED4",
   "background_color" : "#fff" ,
   "display": "standalone",
